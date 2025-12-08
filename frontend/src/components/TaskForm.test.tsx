@@ -3,6 +3,11 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { TaskForm } from '../components/TaskForm';
 
+/**
+ * TaskForm component for creating new tasks.
+ * Handles form state, validation display, and submission.
+ */
+
 describe('TaskForm', () => {
   const mockOnSubmit = vi.fn();
 

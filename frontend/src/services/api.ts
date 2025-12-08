@@ -1,6 +1,12 @@
 import axios, { AxiosError } from 'axios';
 import type { TaskFormData, ApiResponse, ApiError } from '../types/task';
 
+
+/**
+ * API service for communicating with the backend.
+ * Base URL configured via environment variable.
+ */
+
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 const apiClient = axios.create({
